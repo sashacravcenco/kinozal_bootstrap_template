@@ -3,7 +3,9 @@
   text-shadow: 0 0 5px black, 0 0 20px black;
 }
 
-.header {
+.header,
+.main,
+.left-sidebar {
   margin-bottom: 80.0px;
 }
 
@@ -236,6 +238,244 @@ section {
   color: #ffffff;
 
   font-size: 1.15rem;
+}
+
+.main .site-search {
+  margin-bottom: 45px;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.film-news-item h3 > a {
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.film-news-item .thumbnail {
+  margin-bottom: 0;
+
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.film-news-item__text {
+  text-align: justify;
+}
+
+.film-news-item__button {
+  float: right;
+
+  margin-bottom: 30px;
+
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.film-news-item:hover.film-news-item h3 > a {
+  color: #df8a13;
+}
+
+.film-news-item:hover .thumbnail {
+  background-color: #f0ad4f;
+}
+
+.film-news-item:hover .btn-warning {
+  background-color: #df8a13;
+}
+
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.film-trailer-about {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  font-size: 1.2em;
+}
+
+.film-trailer-about__item {
+  white-space: nowrap;
+}
+
+.film-trailer-about__item:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.film-trailer-about__badge {
+  font-size: 0.8em;
+}
+
+.film-comment-form__button {
+  float: right;
+}
+
+.left-sidebar .panel:last-of-type {
+  margin-bottom: 0;
+}
+
+.vertical-slider {
+  overflow: hidden;
+
+  border-radius: 4px;
+}
+
+.vertical-slider img {
+  width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 10px;
+
+  border: none;
+}
+
+.user-login__tabs a {
+  padding: 14px 5px 11px !important;
+
+  color: #dddddd;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.user-login__tabs .active a {
+  color: #ffffff !important;
+}
+
+.site-news-item {
+  position: relative;
+
+  clear: both;
+}
+
+.site-news-item:not(:last-child) {
+  min-height: 85px;
+  margin-bottom: 15px;
+}
+
+.site-news-item:not(:last-child)::after {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+
+  width: calc(100% - 85px);
+  height: 1px;
+
+  content: "";
+
+  background-color: #dddddd;
+}
+
+.site-news-item:hover a {
+  color: #df8a13;
+}
+
+.site-news-item:hover .site-news-item__image {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+
+.site-news-item__image {
+  float: left;
+
+  width: 75px;
+  margin: 0 10px 10px 0;
+}
+
+.site-news-item__date {
+  text-align: right;
+
+  color: #909090;
+
+  font-size: 0.8rem;
+}
+
+.site-news-item__title {
+  margin-bottom: 10px;
+}
+
+.site-news-item__title a {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+
+  height: 50px;
+
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  -webkit-line-clamp: 2;
+}
+
+.top-films__body {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.top-films__list {
+  margin-bottom: 0;
+}
+
+.top-films__item {
+  margin-right: -1px;
+  margin-left: -1px;
+  padding-right: 55px;
+
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+
+  color: #165690 !important;
+  background-color: transparent;
+}
+
+.top-films__item:first-child {
+  border-top: none;
+  border-radius: 0;
+}
+
+.top-films__item:last-child {
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.top-films__item:hover,
+.top-films__item:focus {
+  color: #ffffff !important;
+  border-color: #df8a13;
+  background-color: #df8a13 !important;
+}
+
+.top-films__item:hover .badge,
+.top-films__item:focus .badge {
+  background-color: #232323;
+}
+
+.top-films__badge {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .footer {
